@@ -1,0 +1,335 @@
+.search-bar{
+    height: 60px;
+    background: #1c1c1c !important;
+    font-weight: 400;
+    border-radius: 10px 0 0 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #eee;
+    box-shadow: 0 3px 3px rgba(0,0,0,.05)!important;
+    font-size: 18px;
+    border: none !important;
+}
+.btn-search{
+    width: 90px;
+    height: 65px;
+    padding: 0;
+    margin: 0;
+    background: #5a2e98;
+    border-radius: 0 10px 10px 0; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-icon{
+    color: #fff;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.type-items {
+    display: none; /* Initially hide the type-items */
+  }
+  
+  .type:hover + .type-items,
+  .type-items:hover {
+    display: block; /* Show type-items when .type is hovered or when .type-items itself is hovered */
+  }
+  
+  /* Optional: Add some styling to .type-items */
+  .type-items {
+    border: 1px solid #ccc;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: #5a2e98;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  li{
+    list-style: none;
+  }
+  .type-items li:hover{
+    background: #401a75;
+
+  }
+  .type-items li h2{
+    background: transparent;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 5px 10px;
+    color: #f8f6f6;
+  }
+  .type-items li,.plot-items li{
+    background: transparent;
+  }
+
+.type,.plot{
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100px; 
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.type p,.plot p{
+    color: #eee;
+    font-weight: 200;
+}
+
+  .plot-items {
+    display: none; /* Initially hide the type-items */
+  }
+  
+  .plot:hover + .plot-items,
+  .plot-items:hover {
+    display: block; /* Show type-items when .type is hovered or when .type-items itself is hovered */
+  }
+  
+  /* Optional: Add some styling to .type-items */
+  .plot-items {
+    border: 1px solid #ccc;
+    position:absolute;
+    margin-left: 210px;
+    background-color: #5a2e98;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  li{
+    list-style: none;
+  }
+  .year{
+    height: 50px;
+  width: 100px;
+  border: 2px solid #ccc;
+  background: #1c1c1c;
+  font-weight: 400;
+  border-radius: 5px;
+  padding-left: 5px;
+  color: #eee;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05) !important;
+  font-size: 18px;
+  }
+  .plot-items li:hover{
+    background: #401a75;
+  }
+  .plot-items li h2{
+    background: transparent;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 5px 10px;
+    color: #f8f6f6;
+  }
+  .options{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .message{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #5a2e98;
+    width: 500px;
+    transition: all 0.10s ease;
+    position:absolute;    
+    border-radius: 0px 0px 10px 10px;
+     left: 35%;
+}
+.nav-link{
+  color: #eee !important;
+}
+.navbar-toggler, .navbar-toggler span{
+  color: #eee !important;
+}
+.search-icon{
+  background: transparent;
+}
+.message h1,p{
+  color: #eee;
+}
+.message h1{
+  font-weight: 600;
+  cursor: default;
+}
+.message p{
+  font-size: medium;
+}
+.Nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  box-shadow: 0px 1px 0px 1px #757575;
+}
+.logo{
+  color: #eee !important;
+  cursor: pointer !important;
+  font-size: 40px !important;
+  font-weight: 600 !important;
+}
+.asd{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.s-i,.s-i-d{
+  display: none;
+}
+.s-i-d-items{
+  display: none;
+
+}
+
+.main-data{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title{
+  display: none;
+  transition: 0.10s all ease;
+
+
+}
+.title p{
+  background: transparent;
+  font-size: 20px;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+.Image{
+  height: 287.13px !important;
+  border: 5px solid #eee;
+  border-radius: 2px;
+}
+.Image:hover + .title,
+.title:hover{
+  cursor: pointer;
+  transition: 0.10s all ease;
+  transform: translateY(-287.13px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+position: absolute;
+height: 287.13px;
+width: 195.98px;
+padding: 15px;
+background: #974dff69;
+
+
+}
+
+
+/* Add this CSS in your stylesheet or component style */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.active{
+  background: transparent !important;
+}
+a{
+  color: #eee !important;
+}
+.active a{
+  background: #007bff;
+}
+
+.pagination a {
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+}
+
+.pagination a:hover {
+  background-color: #eee;
+}
+
+.pagination .active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1115px) {
+  .asd{
+    gap: 125px;
+  }
+  .options{
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+}
+
+@media screen and (max-width:700px) {
+  .Image{
+    width: 450px ;
+    height: 410.13px !important;
+  }
+  .Image:hover + .title,
+.title:hover{
+  display: none;
+}
+  .asd{
+    gap: 5px;
+  }
+  .sbm{
+    display: none;
+  }.s-i-d{
+    display: flex;
+    border-radius: 2px;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border: #eee 2px solid;
+  }
+ 
+  .s-i-d:hover + .s-i-d-items,
+  .s-i-d-items:hover {
+    display: flex;
+    
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 10%;
+ /* Show type-items when .type is hovered or when .type-items itself is hovered */
+  }
+  .s-i{
+
+    color: #eee;
+    font-size: 20px;
+    display: block;
+  }
+  
+  
+}
